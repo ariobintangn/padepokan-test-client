@@ -17,7 +17,7 @@ export const useCustomerStore = defineStore({
                     url: `${baseUrl}/customers`
                 })
                 console.log("MASUK NIH", data)
-                this.customers.push(data)
+                this.customers = data 
                 
             } catch (error) {
                 
@@ -29,8 +29,8 @@ export const useCustomerStore = defineStore({
                     method: "GET",
                     url: `${baseUrl}/transactions`
                 })
-                console.log("MASUK NIH", data)
-                this.transactions.push(data)
+                console.log("TRANSACTIONS", data)
+                this.transactions = data
                 
             } catch (error) {
                 

@@ -23,7 +23,7 @@ export default {
 
     <div class="wrapper">
       <h1 class=" bg-slate-400">TESTING</h1>
-      <h2>{{ this.transactions[0][0] }}</h2>
+      <h2>{{  }}</h2>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
