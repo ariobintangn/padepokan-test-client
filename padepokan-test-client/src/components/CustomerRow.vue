@@ -17,8 +17,8 @@ import { useCustomerStore } from '../stores/customers';
 
 <template>
     <tr>
-        <td>{{ customer.id }}</td>
-        <td>{{ customer.name }}</td>
+        <td class="border border-black">{{ customer.id }}</td>
+        <td class="border border-black">{{ customer.name }}</td>
     </tr>
 </template>
 

@@ -2,7 +2,10 @@
 module.exports = {
   content: [
     "./src/App.vue",
-    "./src/views/HomeView.vue"
+    "./src/views/HomeView.vue",
+    "./src/components/AddCustomer.vue",
+    "./src/components/CustomerRow.vue",
+    "./src/components/TransactionRow.vue",
   ],
   theme: {
     extend: {},

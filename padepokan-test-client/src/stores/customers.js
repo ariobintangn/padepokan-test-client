@@ -16,7 +16,7 @@ export const useCustomerStore = defineStore({
                     method: "GET",
                     url: `${baseUrl}/customers`
                 })
-                console.log("MASUK NIH", data)
+                console.log("CUSTOMERS", data)
                 this.customers = data 
                 
             } catch (error) {
@@ -34,6 +34,22 @@ export const useCustomerStore = defineStore({
                 
             } catch (error) {
                 
+            }
+        },
+        async addCustomer(value){
+            try {
+                console.log("MASUK CUSTOMER NIH");
+                await axios({
+                    method: "POST",
+                    url: `${baseUrl}/customers`,
+                    body: {
+                        name: value
+                    }
+                })
+                console.log("Success add");
+                this.fetchCustomers()
+            } catch (error) {
+                console.log(error);
             }
         }
     }
