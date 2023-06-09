@@ -23,10 +23,12 @@ export default {
 
     <div class="wrapper">
       <h1 class=" bg-slate-400">TESTING</h1>
-      <h2>{{ this.transactions[0][0] }}</h2>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+      <h2>{{  }}</h2>
+      <nav class="mb-12">
+        <RouterLink to="/" class="text-2xl bg-slate-400 mx-2 rounded-md hover:bg-slate-200">Customer</RouterLink>
+        <RouterLink to="/transaction" class="text-2xl bg-slate-400 mx-2 rounded-md hover:bg-slate-200">Transaction</RouterLink>
+        <RouterLink to="/timed-transaction" class="text-2xl bg-slate-400 mx-2 rounded-md hover:bg-slate-200">Timed Transaction</RouterLink>
+        <RouterLink to="/point" class="text-2xl bg-slate-400 mx-2 rounded-md hover:bg-slate-200">Customer's Point</RouterLink>
       </nav>
     </div>
   </header>
