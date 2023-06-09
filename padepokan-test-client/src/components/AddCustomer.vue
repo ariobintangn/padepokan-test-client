@@ -18,7 +18,10 @@ export default {
             // customerStore.addCustomer(newCustomer)
             console.log("clicked", newCustomer.value);
             customerStore.addCustomer(newCustomer.value)
-            this.newCustomer = ''
+            newCustomer.value = ''
+            
+            
+
         }
         return { handleSubmit, newCustomer }
     },
