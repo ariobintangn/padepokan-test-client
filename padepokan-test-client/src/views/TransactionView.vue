@@ -26,6 +26,10 @@ export default {
 <template>
     <div class="flex flex-col">
         <div class="mx-2">
+            <h1>Add Transaction</h1>
+            <AddTransaction />
+        </div>
+        <div class="mx-2">
             <h1>Transaction Page</h1>
             <table class="border">
                 <thead>
@@ -40,9 +44,6 @@ export default {
                 </tbody>
             </table>
         </div>
-        <div class="mx-2">
-            <h1>Add Transaction</h1>
-            <AddTransaction />
-        </div>
+
     </div>
 </template>

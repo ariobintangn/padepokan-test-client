@@ -9,6 +9,7 @@ export default {
                 description: '',
                 amount: 0,
                 accountId: '',
+                debitCreditStatus: ''
             }
         };
     },
@@ -25,6 +26,7 @@ export default {
                         description: '',
                         amount: 0,
                         accountId: '',
+                        debitCreditStatus: ''
                     };
                 })
                 .catch((error) => {
@@ -46,7 +48,7 @@ export default {
     <div class="border border-black max-w-xs">
 
         <form @submit.prevent="addTransaction" class="flex flex-col">
-            <label for="accountId">User ID:</label>
+            <label for="accountId">Customer Name</label>
             <select id="accountId" v-model="transaction.accountId" required>
                 <option value="">Select a user</option>
                 <option v-for="customer in customers" :key="customer.id" :value="customer.id">{{ customer.name}}</option>
